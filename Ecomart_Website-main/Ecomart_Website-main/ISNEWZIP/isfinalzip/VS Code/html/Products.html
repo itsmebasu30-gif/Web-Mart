@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page- WebMart</title>
+    <!-- Use of External CSS-->
+    <link rel="stylesheet" href="../css/Navigation.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="stylesheet" href="../css/Products.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Use of Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Use of Font Awesome Link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Use of Internal CSS -->
+    <style>
+        /* Styling the add to cart button */
+        .add-to-cart-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
+        }
+
+        /* Applying hover effect to the add to cart button */
+        .add-to-cart-btn:hover {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(34, 197, 94, 0.3);
+        }
+
+        /* View Details Button */
+        .view-details-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: transparent;
+            color: #1e293b;
+            border: 2px solid #1e293b;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .view-details-btn:hover {
+            background: #1e293b;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/images/download.png" alt="">
+        </div>
+        <!-- Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="Contact_Us.html">CONTACT US</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Input search box -->
+            <input type="text" placeholder="Search products..." class="search-box">
+            <!-- Cart Button Icon-->
+            <a href="#" class="cart-btn" id="cart-btn">
+                <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.6-1.4 2.5c-.2.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2l.9-1.6h7.5c.7 0 1.4-.4 1.7-1l3.6-6.5c.1-.1.1-.3.1-.5 0-.5-.4-1-1-1H5.2L4.3 2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+            <!-- Login Button-->
+            <a href="Login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Use of Tnline CSS-->
+        <h1 style="color: rgb(247, 247, 251); text-align: center; margin-top: 100px;">Available Products</h1>
+        <!-- Products Section -->
+        <section class="products-section top">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-id="1" data-name="Bamboo Toothbrush" data-price="50"
+                    data-image="../assets/images/BambooToothbrush.webp">
+                    <a
+                        href="ProductDetail.html?id=1&name=Bamboo%20Toothbrush&price=50&image=../assets/images/BambooToothbrush.webp">
+                        <div class="product-placeholder"><img src="../assets/images/BambooToothbrush.webp" alt=""
+                                width="100%" height="100%"></div>
+                    </a>
+                    <h3>Bamboo Toothbrush</h3>
+                    <p class="price">Rs. 50</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=1&name=Bamboo%20Toothbrush&price=50&image=../assets/images/BambooToothbrush.webp"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-id="2" data-name="Bamboo Water Bottle" data-price="300"
+                    data-image="../assets/images/waterbottle.jpg">
+                    <a
+                        href="ProductDetail.html?id=2&name=Bamboo%20Water%20Bottle&price=300&image=../assets/images/waterbottle.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/waterbottle.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Bamboo Water Bottle</h3>
+                    <p class="price">Rs. 300</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=2&name=Bamboo%20Water%20Bottle&price=300&image=../assets/images/waterbottle.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-id="3" data-name="Organic Cotton Bag" data-price="400"
+                    data-image="../assets/images/cotton.webp">
+                    <a
+                        href="ProductDetail.html?id=3&name=Organic%20Cotton%20Bag&price=400&image=../assets/images/cotton.webp">
+                        <div class="product-placeholder"><img src="../assets/images/cotton.webp" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Organic Cotton Bag</h3>
+                    <p class="price">Rs. 400</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=3&name=Organic%20Cotton%20Bag&price=400&image=../assets/images/cotton.webp"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-id="4" data-name="Natural Soap Bar" data-price="50"
+                    data-image="../assets/images/soap.webp">
+                    <a
+                        href="ProductDetail.html?id=4&name=Natural%20Soap%20Bar&price=50&image=../assets/images/soap.webp">
+                        <div class="product-placeholder"><img src="../assets/images/soap.webp" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Natural Soap Bar</h3>
+                    <p class="price">Rs. 50</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=4&name=Natural%20Soap%20Bar&price=50&image=../assets/images/soap.webp"
+                        class="view-details-btn">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-grid">
+                <!-- Product 5 -->
+                <div class="product-card" data-id="5" data-name="Organic Cotton T-Shirt" data-price="500"
+                    data-image="../assets/images/tshirt.jpg">
+                    <a
+                        href="ProductDetail.html?id=5&name=Organic%20Cotton%20T-Shirt&price=500&image=../assets/images/tshirt.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/tshirt.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Organic Cotton T-Shirt</h3>
+                    <p class="price">Rs. 500</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=5&name=Organic%20Cotton%20T-Shirt&price=500&image=../assets/images/tshirt.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-id="6" data-name="Recycled Polystere Jacket" data-price="1500"
+                    data-image="../assets/images/jacket.jpg">
+                    <a
+                        href="ProductDetail.html?id=6&name=Recycled%20Polystere%20Jacket&price=1500&image=../assets/images/jacket.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/jacket.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Recycled Polystere Jacket</h3>
+                    <p class="price">Rs. 1500</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=6&name=Recycled%20Polystere%20Jacket&price=1500&image=../assets/images/jacket.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-id="7" data-name="Organic Cotton Socks" data-price="100"
+                    data-image="../assets/images/socks.jpg">
+                    <a
+                        href="ProductDetail.html?id=7&name=Organic%20Cotton%20Socks&price=100&image=../assets/images/socks.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/socks.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Organic Cotton Socks</h3>
+                    <p class="price">Rs. 100</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=7&name=Organic%20Cotton%20Socks&price=100&image=../assets/images/socks.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-id="8" data-name="Sustainable Wood Furniture" data-price="1000"
+                    data-image="../assets/images/furniture.avif">
+                    <a
+                        href="ProductDetail.html?id=8&name=Sustainable%20Wood%20Furniture&price=1000&image=../assets/images/furniture.avif">
+                        <div class="product-placeholder"><img src="../assets/images/furniture.avif" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Sustainable Wood Furniture</h3>
+                    <p class="price">Rs. 1000</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=8&name=Sustainable%20Wood%20Furniture&price=1000&image=../assets/images/furniture.avif"
+                        class="view-details-btn">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-grid">
+                <!-- Product 9 -->
+                <div class="product-card" data-id="9" data-name="Bamboo Cutting Board" data-price="150"
+                    data-image="../assets/images/cuttingboard.webp">
+                    <a
+                        href="ProductDetail.html?id=9&name=Bamboo%20Cutting%20Board&price=150&image=../assets/images/cuttingboard.webp">
+                        <div class="product-placeholder"><img src="../assets/images/cuttingboard.webp" alt=""
+                                width="100%" height="100%"></div>
+                    </a>
+                    <h3>Bamboo Cutting Board</h3>
+                    <p class="price">Rs. 150</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=9&name=Bamboo%20Cutting%20Board&price=150&image=../assets/images/cuttingboard.webp"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 10 -->
+                <div class="product-card" data-id="10" data-name="Compostable Trash Bags" data-price="100"
+                    data-image="../assets/images/trashbags.jpg">
+                    <a
+                        href="ProductDetail.html?id=10&name=Compostable%20Trash%20Bags&price=100&image=../assets/images/trashbags.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/trashbags.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Compostable Trash Bags</h3>
+                    <p class="price">Rs. 100</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=10&name=Compostable%20Trash%20Bags&price=100&image=../assets/images/trashbags.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-card" data-id="11" data-name="Reusable Cutlery Kits" data-price="200"
+                    data-image="../assets/images/cutlery.jpg">
+                    <a
+                        href="ProductDetail.html?id=11&name=Reusable%20Cutlery%20Kits&price=200&image=../assets/images/cutlery.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/cutlery.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>Reusable Cutlery Kits</h3>
+                    <p class="price">Rs. 200</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=11&name=Reusable%20Cutlery%20Kits&price=200&image=../assets/images/cutlery.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-card" data-id="12" data-name="compostable Dish Sponges" data-price="30"
+                    data-image="../assets/images/sponge.jpg">
+                    <a
+                        href="ProductDetail.html?id=12&name=Compostable%20Dish%20Sponges&price=30&image=../assets/images/sponge.jpg">
+                        <div class="product-placeholder"><img src="../assets/images/sponge.jpg" alt="" width="100%"
+                                height="100%"></div>
+                    </a>
+                    <h3>compostable Dish Sponges</h3>
+                    <p class="price">Rs. 30</p>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="ProductDetail.html?id=12&name=Compostable%20Dish%20Sponges&price=30&image=../assets/images/sponge.jpg"
+                        class="view-details-btn">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- About us column -->
+            <div class="footer-section">
+                <h3 id="footer-about">About WebMart</h3>
+                <p>We are dedicated to providing sustainable and eco-friendly products to help you live a greener life.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick navigation links -->
+            <div class="footer-section">
+                <h3 id="footer-links">Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact information section -->
+            <div class="footer-section">
+                <h3 id="footer-contact">Contact Info</h3>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fa-solid fa-location-dot"></i><a>Itahari, Sundar
+                            Dulari</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a>support@webmart.com</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-phone"></i><a>+9779806095144</a></div>
+                </div>
+            </div>
+
+            <!-- Newsletter signup form -->
+            <div class="footer-section">
+                <h3 id="footer-newsletter">Newsletter</h3>
+                <p>Subscribe for updates and eco-tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 WebMart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: Rs. <span id="cart-total">0</span></div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" class="login-form">
+                <h2>LOGIN</h2>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <button class="submitbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

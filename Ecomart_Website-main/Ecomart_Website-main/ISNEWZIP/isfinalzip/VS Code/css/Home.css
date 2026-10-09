@@ -1,0 +1,251 @@
+/* Hiding the scrollbar */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Styling the body */
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+section {
+    padding: 40px 16px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* Styling the categories section */
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Styling the category cards */
+.category-card {
+    background: #f9f9f9;
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.4s ease;
+    flex: 1 1 280px;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Applying hover effect to the category cards */
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.15);
+    border-color: #4ade80;
+}
+
+/* Styling the category icons */
+.category-icon {
+    font-size: 3.5rem;
+    margin-bottom: 18px;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+    transform: scale(1.15);
+}
+
+.category-card h3 {
+    color: #1f3d2e;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #566c5d;
+}
+
+/* Styling the products section */
+.products-section {
+    margin-bottom: 50px;
+}
+
+.products-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Styling the products card */
+.product-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    flex: 1 1 280px;
+    max-width: 320px;
+}
+
+/* Applying hover effect to the products card */
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+    border-color: hsl(212, 100%, 86%);
+}
+
+/* Styling the products image div section */
+.product-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling the product details */
+.product-card h3 {
+    font-size: 1.1rem;
+    color: #1f3d2e;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #2E7D32;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+/* Quantity Controls in Product Card */
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 8px;
+}
+
+.qty-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.qty-btn:hover {
+    background-color: #eabe7d;
+}
+
+.qty-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Styling the add to cart button */
+.add-to-cart-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
+}
+
+/* Applying hover effect to the add to cart button */
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(34, 197, 94, 0.3);
+}
+
+/* View Details Button */
+.view-details-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    color: #1e293b;
+    border: 2px solid #1e293b;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background: #1e293b;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    section {
+        padding: 30px 12px;
+    }
+
+    .categories-grid {
+        gap: 20px;
+    }
+
+    .products-grid {
+        gap: 20px;
+    }
+
+    .product-placeholder {
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 24px 10px;
+    }
+
+    .category-card {
+        flex: 1 1 240px;
+        max-width: 280px;
+        padding: 25px 18px;
+    }
+
+    .products-grid {
+        gap: 16px;
+    }
+
+    .product-card {
+        flex: 1 1 240px;
+        max-width: 280px;
+        padding: 16px;
+    }
+
+    .product-placeholder {
+        height: 140px;
+    }
+}

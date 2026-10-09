@@ -1,0 +1,163 @@
+/* Hiding the scrollbar */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+main {
+    border: 0px solid black;
+    width: 100%;
+    max-width: 1100px;
+    background: white;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+.blog-header {
+    margin-top: 0px;
+    font-size: 2.2rem;
+}
+
+.container {
+    max-width: 100%;
+    padding: 50px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+article h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #4CAF50;
+}
+
+article p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #555;
+    text-align: justify;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    main {
+        width: 95%;
+        padding-top: 120px;
+    }
+
+    .container {
+        padding: 30px;
+        padding-top: 5px;
+    }
+
+    article {
+        max-width: 800px;
+    }
+
+    article h2 {
+        font-size: 28px;
+    }
+
+    article p {
+        font-size: 17px;
+    }
+
+    .blog-header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 130px;
+    }
+
+    .container {
+        padding: 24px;
+        padding-top: 5px;
+    }
+
+    article {
+        max-width: 720px;
+    }
+
+    .blog-header {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        width: 100%;
+        padding-top: 140px;
+    }
+
+    .container {
+        padding: 20px;
+        padding-top: 5px;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+
+    .blog-header {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 420px) {
+    main {
+        padding-top: 150px;
+    }
+
+    .container {
+        padding: 14px;
+        padding-top: 5px;
+    }
+
+    article h2 {
+        font-size: 22px;
+    }
+
+    article p {
+        font-size: 15px;
+    }
+
+    .blog-header {
+        font-size: 1.5rem;
+    }
+}

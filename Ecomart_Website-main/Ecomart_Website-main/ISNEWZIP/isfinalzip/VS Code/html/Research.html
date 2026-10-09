@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Page- WebMart</title>
+    <!-- Use of External Css -->
+    <link rel="stylesheet" href="../css/Research.css">
+    <link rel="stylesheet" href="../css/Navigation.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Use of Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Use of Font Awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Use of Internal CSS -->
+    <style>
+        /* Objectives Section */
+        .research-page .objectives-section {
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .research-page .objectives-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .research-page .objective-item {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .research-page .objective-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .research-page .objective-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .research-page .objective-item h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .research-page .objective-item p {
+            color: #666;
+            line-height: 1.7;
+            text-align: auto;
+        }
+
+        .research-page .objective-item .edit-para {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/images/download.png" alt="">
+        </div>
+        <!-- Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="Contact_Us.html">CONTACT US</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Input search box -->
+            <input type="text" placeholder="Search products..." class="search-box">
+            <!-- Cart Button Icon-->
+            <a href="#" class="cart-btn" id="cart-btn">
+                <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.6-1.4 2.5c-.2.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2l.9-1.6h7.5c.7 0 1.4-.4 1.7-1l3.6-6.5c.1-.1.1-.3.1-.5 0-.5-.4-1-1-1H5.2L4.3 2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+            <!-- Login Button-->
+            <a href="Login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+
+    <main class="research-page">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="page-title">RESEARCH PAGE</h1>
+            <p class="page-subtitle">Comparison, Analysis & References</p>
+        </section>
+
+        <!-- Research Categories -->
+        <section class="categories-section">
+            <h2 class="section-title">Research Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="../assets/images/uiux.png" alt="">
+                    </div>
+                    <h3>UI/UX Comparison</h3>
+                    <p>Interface and user experience analysis</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="../assets/images/feature.png" alt="">
+                    </div>
+                    <h3>Feature Analysis</h3>
+                    <p>Detailed feature comparison and evaluation</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="../assets/images/design.png" alt="">
+                    </div>
+                    <h3>Design References</h3>
+                    <p>Best practices and design patterns</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Research Comparisons -->
+        <section class="comparisons-section">
+            <h2 class="section-title">Research Comparisons</h2>
+            <div class="comparisons-grid">
+                <!-- Comparison 1 -->
+                <div class="comparison-card">
+                    <h3>WebMart vs WebMart IT and Ik</h3>
+                    <div class="button-div">
+                        <a class="view-analysis-btn" href="comparision1.html" target="_blank">View Analysis</a>
+                    </div>
+
+                </div>
+
+                <!-- Comparison 2 -->
+                <div class="comparison-card">
+                    <h3>WebMart vs My Ecomart</h3>
+                    <div class="button-div">
+                        <a class="view-analysis-btn" href="comaparision2.html" target="_blank">View Analysis</a>
+                    </div>
+                </div>
+
+                <!-- Comparison 3 -->
+                <div class="comparison-card">
+                    <h3>WebMart vs Ecokari</h3>
+                    <div class="button-div">
+                        <a class="view-analysis-btn" href="comparision3.html" target="_blank">View Analysis</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Findings Overview -->
+        <section class="findings-section">
+            <h2 class="section-title">Research Findings</h2>
+            <div class="findings-content">
+                <p>We conducted comprehensive research comparing WebMart with leading eco-friendly e-commerce platforms
+                    including EarthHero, Grove Collaborative, and Package Free Shop. Our analysis evaluated layout
+                    design, usability features, sustainable shopping experience, and industry best practices. The
+                    research highlights key similarities and differences between these platforms and provides insights
+                    into user experience trends in the sustainable e-commerce sector.</p>
+
+                <div class="key-insights">
+                    <h3>Key Research Insights</h3>
+                    <ul>
+                        <li><strong>Sustainability-First Design:</strong> All analyzed platforms prominently feature
+                            eco-friendly credentials and impact messaging</li>
+                        <li><strong>User Experience Patterns:</strong> Simplified navigation, clear product
+                            categorization, and minimal checkout processes are industry standards</li>
+                        <li><strong>Visual Identity:</strong> natural imagery, and clean layouts dominate the
+                            eco-commerce design space</li>
+                        <li><strong>Trust Signals:</strong> Certification badges, and impact metrics build customer
+                            confidence</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features and Objectives -->
+        <section class="objectives-section">
+            <h2 class="section-title">Features and Objectives of Research</h2>
+            <div class="objectives-content">
+                <div class="objective-item">
+                    <div class="objective-icon">🎯</div>
+                    <h3>Primary Research Objective</h3>
+                    <p>Analyze and compare WebMart's design and functionality with leading sustainable e-commerce
+                        platforms to identify strengths, opportunities for improvement, and industry best practices in
+                        eco-friendly online retail.</p>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-icon">🔍</div>
+                    <h3>Key Analysis <br>Features</h3>
+                    <p class="edit-para">Comprehensive evaluation of navigation patterns, product presentation,
+                        sustainability messaging, checkout flows, mobile responsiveness, and trust-building elements
+                        across competing platforms.</p>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-icon">🌱</div>
+                    <h3>Common Sustainability Goals</h3>
+                    <p>All analyzed platforms share the mission of promoting eco-conscious consumption, reducing
+                        environmental impact, supporting ethical brands, and educating consumers about sustainable
+                        living practices.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About WebMart</h3>
+                <p>We are dedicated to providing sustainable and eco-friendly products to help you live a greener life.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fa-solid fa-location-dot"></i><a
+                            href="https://www.google.com/maps/search/?q=Itahari%2C%20Sundar%20Dulari" target="_blank"
+                            rel="noopener">Itahari, Sundar Dulari</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a
+                            href="mailto:support@webmart.com">support@webmart.com</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-phone"></i><a
+                            href="tel:+9779806095144">+9779806095144</a></div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates and eco-tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WebMart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: Rs. <span id="cart-total">0</span></div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" class="login-form">
+                <h2>LOGIN</h2>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <button class="submitbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

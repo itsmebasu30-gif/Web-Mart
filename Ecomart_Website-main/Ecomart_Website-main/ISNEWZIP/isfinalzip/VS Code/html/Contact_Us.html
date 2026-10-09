@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page- WebMart</title>
+    <!-- Use of External CSS-->
+    <link rel="stylesheet" href="../css/Navigation.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="stylesheet" href="../css/Contact.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Use of Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Use of Font Awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Use of Internal CSS-->
+    <style>
+        .map-head {
+            color: rgb(247, 247, 251);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .map-div {
+            border: 0px solid black;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .map {
+            border: 0px solid blue;
+            width: 1170px;
+            height: 500px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/images/download.png" alt="">
+        </div>
+        <!-- Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="Contact_Us.html">CONTACT US</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Input search box -->
+            <input type="text" placeholder="Search products..." class="search-box">
+            <!-- Cart Button Icon-->
+            <a href="#" class="cart-btn" id="cart-btn">
+                <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.6-1.4 2.5c-.2.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2l.9-1.6h7.5c.7 0 1.4-.4 1.7-1l3.6-6.5c.1-.1.1-.3.1-.5 0-.5-.4-1-1-1H5.2L4.3 2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+            <!-- Login Button-->
+            <a href="Login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="contact-main">
+        <!-- Use of Inline CSS-->
+        <h1 style="text-align: center; margin-top: 25px; margin-bottom: -10px; color: rgb(247, 247, 251);">Get In Touch
+            With Us</h1>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info-main-div">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Address</h3>
+                                <p>Itahari, Sundar Dulari<br>Nepal</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Phone</h3>
+                                <p>+977 9806095144</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Email</h3>
+                                <p>support@webmart.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social Icons-->
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-main-div">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-content">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+
+                        <div class="form-content">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="Your Email">
+                        </div>
+
+                        <div class="form-content">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i>
+                            </label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+
+                        <div class="form-content">
+                            <label for="address">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </label>
+                            <input type="text" id="address" name="address" placeholder="Your Address">
+                        </div>
+
+                        <div class="form-content">
+                            <textarea id="message" name="message" rows="11" placeholder="Your Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Use of Map-->
+        <h1 class="map-head">Find Us</h1>
+        <div class="map-div">
+            <!-- Embedding Map-->
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49837.71129144726!2d87.22051663290742!3d26.659622609666485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6c66e80fbfa9%3A0x38094d1a7c974283!2sItahari!5e0!3m2!1sen!2snp!4v1767889356143!5m2!1sen!2snp"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- About us column -->
+            <div class="footer-section">
+                <h3 id="footer-about">About WebMart</h3>
+                <p>We are dedicated to providing sustainable and eco-friendly products to help you live a greener life.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick navigation links -->
+            <div class="footer-section">
+                <h3 id="footer-links">Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact information section -->
+            <div class="footer-section">
+                <h3 id="footer-contact">Contact Info</h3>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fa-solid fa-location-dot"></i><a>Itahari, Sundar
+                            Dulari</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a>support@webmart.com</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-phone"></i><a>+9779806095144</a></div>
+                </div>
+            </div>
+
+            <!-- Newsletter signup form -->
+            <div class="footer-section">
+                <h3 id="footer-newsletter">Newsletter</h3>
+                <p>Subscribe for updates and eco-tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 WebMart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: Rs. <span id="cart-total">0</span></div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" class="login-form">
+                <h2>LOGIN</h2>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <button class="submitbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../js/contactform.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

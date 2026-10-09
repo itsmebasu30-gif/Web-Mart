@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hiding the scrollbar */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+}
+
+main.profile-page {
+  padding: 120px 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-page .card {
+  width: 1100px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-page .photo {
+  background: linear-gradient(135deg, #8BC34A 0%, #4ade80 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  flex: 0 0 360px;
+}
+
+.profile-page .photo img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-page .info {
+  padding: 44px 46px 40px;
+  flex: 1 1 auto;
+}
+
+.profile-page .name {
+  font-size: 2.2rem;
+  color: #1f2937;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.profile-page .role {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #1e40af;
+  color: white;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.profile-page .bio {
+  margin-top: 20px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.profile-page .contacts {
+  margin-top: 28px;
+}
+
+.profile-page .contacts-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.profile-page .contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.profile-page .contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #f9fafb;
+  flex: 1 1 280px;
+  min-width: 260px;
+}
+
+.profile-page .contacts-item i {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: #1e40af;
+  font-size: 16px;
+}
+
+.profile-page .contacts-item a,
+.profile-page .contacts-item span {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.profile-page .buttons {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.profile-page .button {
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-page .button.Message {
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 86, 179, 0.35);
+}
+
+.profile-page .button.Back {
+  background: #f3f4f6;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
+
+.profile-page .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+  .profile-page .card {
+    flex-direction: column;
+  }
+
+  .profile-page .photo {
+    padding: 30px 30px 0;
+    flex: 0 0 auto;
+  }
+
+  .profile-page .photo img {
+    width: 200px;
+    height: 200px;
+  }
+}

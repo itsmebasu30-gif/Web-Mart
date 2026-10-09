@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page- WebMart</title>
+    <!-- Use of External Css -->
+    <link rel="stylesheet" href="../css/Navigation.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Use of Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Use of Font Awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Use of Internal CSS -->
+    <style>
+        /* Applying border properties on member cards */
+        .m1 {
+            border-left: 5px solid #2196F3;
+        }
+
+        .m1 .avatar {
+            background: #2196F3
+        }
+
+        .m2 {
+            border-left: 5px solid #9C27B0;
+        }
+
+        .m2 .avatar {
+            background: #9C27B0
+        }
+
+        .m3 {
+            border-left: 5px solid #00BCD4;
+        }
+
+        .m3 .avatar {
+            background: #00BCD4;
+        }
+
+        .m4 {
+            border-left: 5px solid #FF9800;
+        }
+
+        .m4 .avatar {
+            background: #FF9800;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/images/download.png" alt="">
+        </div>
+        <!-- Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="Contact_Us.html">CONTACT US</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Input search box -->
+            <input type="text" placeholder="Search products..." class="search-box">
+            <!-- Cart Button Icon-->
+            <a href="#" class="cart-btn" id="cart-btn">
+                <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.6-1.4 2.5c-.2.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2l.9-1.6h7.5c.7 0 1.4-.4 1.7-1l3.6-6.5c.1-.1.1-.3.1-.5 0-.5-.4-1-1-1H5.2L4.3 2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+            <!-- Login Button-->
+            <a href="Login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Inline CSS -->
+        <h1 style=" text-align: center; margin-top: -3px; margin-bottom: 40px; color: rgb(247, 247, 251);">Meet The
+            WebMart Team</h1>
+        <!-- Team Member Cards -->
+        <section class="team">
+            <div class="leader-card">
+                <div class="member-card leader">
+                    <div class="avatar"><img src="../assets/images/Rojan.jpeg"></div>
+                    <h3 class="member-name">Rojan Thapa</h3>
+                    <span class="leader-badge">TEAM LEAD</span>
+                    <p class="member-role">Project Lead</p>
+                    <p class="member-age">Age: 20</p>
+                    <a href="Rojan.html" class="view-more">view more</a>
+
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="member-card m1">
+                    <div class="avatar"><img src="../assets/images/Prajwal.png"></div>
+                    <h3 class="member-name">Prajwal Yadav</h3>
+                    <p class="member-role">Frontend Developer</p>
+                    <p class="member-age">Age: 18</p>
+                    <a href="Prajwal.html" class="view-more">view more</a>
+
+                </div>
+
+                <div class="member-card m2">
+                    <div class="avatar"><img src="../assets/images/Yujon.jpeg"></div>
+                    <h3 class="member-name">Yujon Budathoki</h3>
+                    <p class="member-role">UI/UX Designer</p>
+                    <p class="member-age">Age: 17</p>
+                    <a href="Yujon.html" class="view-more">view more</a>
+
+                </div>
+
+                <div class="member-card m3">
+                    <div class="avatar"><img src="../assets/images/Pramit.jpeg"></div>
+                    <h3 class="member-name">Pramit Pariyar</h3>
+                    <p class="member-role">Backend Developer</p>
+                    <p class="member-age">Age: 21</p>
+                    <a href="Pramit.html" class="view-more">view more</a>
+
+                </div>
+
+                <div class="member-card m4">
+                    <div class="avatar"><img src="../assets/images/Basu.jpeg"></div>
+                    <h3 class="member-name">Basudev Shah</h3>
+                    <p class="member-role">QA Engineer</p>
+                    <p class="member-age">Age: 20</p>
+                    <a href="Basu.html" class="view-more">view more</a>
+
+
+                </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- About us column -->
+            <div class="footer-section">
+                <h3 id="footer-about">About WebMart</h3>
+                <p>We are dedicated to providing sustainable and eco-friendly products to help you live a greener life.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick navigation links -->
+            <div class="footer-section">
+                <h3 id="footer-links">Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact information section -->
+            <div class="footer-section">
+                <h3 id="footer-contact">Contact Info</h3>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fa-solid fa-location-dot"></i><a>Itahari, Sundar
+                            Dulari</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a>support@webmart.com</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-phone"></i><a>+9779806095144</a></div>
+                </div>
+            </div>
+
+            <!-- Newsletter signup form -->
+            <div class="footer-section">
+                <h3 id="footer-newsletter">Newsletter</h3>
+                <p>Subscribe for updates and eco-tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 WebMart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: Rs. <span id="cart-total">0</span></div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" class="login-form">
+                <h2>LOGIN</h2>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <button class="submitbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- External JavaScript -->
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

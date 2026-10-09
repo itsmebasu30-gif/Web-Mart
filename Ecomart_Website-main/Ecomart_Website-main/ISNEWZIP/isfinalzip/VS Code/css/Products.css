@@ -1,0 +1,149 @@
+/* Hiding the scrollbar */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Styling the body */
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.products-section {
+    margin-bottom: 50px;
+}
+
+.top {
+    margin-top: 50px;
+}
+
+/* Styling products card */
+.products-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    flex: 1 1 280px;
+    max-width: 320px;
+}
+
+
+/* Quantity Controls in Product Card */
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 8px;
+}
+
+.qty-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.qty-btn:hover {
+    background-color: #eabe7d;
+}
+
+.qty-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Applying hover effects to products card */
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+    border-color: hsl(212, 100%, 86%);
+}
+
+/* Styling products image div section */
+.product-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling prouct name section */
+.product-card h3 {
+    font-size: 1.1rem;
+    color: #1f3d2e;
+    margin-bottom: 10px;
+}
+
+/* Styling product price section */
+.price {
+    color: #2E7D32;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+main {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+@media (max-width: 992px) {
+    .products-grid {
+        gap: 20px;
+    }
+
+    .product-placeholder {
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        gap: 16px;
+    }
+
+    .product-card {
+        flex: 1 1 240px;
+        max-width: 280px;
+        padding: 16px;
+    }
+
+    .product-placeholder {
+        height: 140px;
+    }
+}

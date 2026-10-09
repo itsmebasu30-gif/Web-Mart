@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojan Thapa - Portfolio</title>
+    <link rel="stylesheet" href="../css/Navigation.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/images/download.png" alt="">
+        </div>
+        <!-- Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="Contact_Us.html">CONTACT US</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Input search box -->
+            <input type="text" placeholder="Search products..." class="search-box">
+            <!-- Cart Button Icon-->
+            <a href="#" class="cart-btn" id="cart-btn">
+                <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.6-1.4 2.5c-.2.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2l.9-1.6h7.5c.7 0 1.4-.4 1.7-1l3.6-6.5c.1-.1.1-.3.1-.5 0-.5-.4-1-1-1H5.2L4.3 2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+            <!-- Login Button-->
+            <a href="Login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="profile-page">
+        <section class="card">
+            <div class="photo">
+                <img src="../assets/images/Rojan.jpeg" alt="Rojan Thapa">
+            </div>
+            <div class="info">
+                <h1 class="name">Rojan Thapa</h1>
+                <span class="role">Project Lead</span>
+                <p class="bio">Leads product direction, architecture, and delivery. Coordinates team efforts, sets
+                    priorities, and ensures quality across the stack. Focuses on clarity, maintainability, and shipping
+                    features that delight users.</p>
+                <div class="contacts">
+                    <div class="contacts-title">Contact</div>
+                    <div class="contacts-list">
+                        <div class="contacts-item"><i class="fa-solid fa-envelope"></i><a>rojanthapa@gmail.com</a></div>
+                        <div class="contacts-item"><i class="fa-solid fa-phone"></i><span>+977-9800000001</span></div>
+                        <div class="contacts-item"><i class="fa-solid fa-location-dot"></i><span>Kathmandu, Nepal</span>
+                        </div>
+                        <div class="contacts-item"><i class="fa-brands fa-linkedin"></i><a href="#"
+                                target="_blank">linkedin.com/in/rojan</a></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a class="button Message"><i class="fa-solid fa-paper-plane"></i>Message</a>
+                    <a class="button Back" href="About_Us.html"><i class="fa-solid fa-users"></i>Back to Team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- About us column -->
+            <div class="footer-section">
+                <h3 id="footer-about">About WebMart</h3>
+                <p>We are dedicated to providing sustainable and eco-friendly products to help you live a greener life.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick navigation links -->
+            <div class="footer-section">
+                <h3 id="footer-links">Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact information section -->
+            <div class="footer-section">
+                <h3 id="footer-contact">Contact Info</h3>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fa-solid fa-location-dot"></i><a>Itahari, Sundar
+                            Dulari</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a>support@webmart.com</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-phone"></i><a>+9779806095144</a></div>
+                </div>
+            </div>
+
+            <!-- Newsletter signup form -->
+            <div class="footer-section">
+                <h3 id="footer-newsletter">Newsletter</h3>
+                <p>Subscribe for updates and eco-tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 WebMart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: Rs. <span id="cart-total">0</span></div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" class="login-form">
+                <h2>LOGIN</h2>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <button class="submitbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

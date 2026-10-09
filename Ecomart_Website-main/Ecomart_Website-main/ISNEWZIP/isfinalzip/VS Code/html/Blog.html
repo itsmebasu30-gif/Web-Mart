@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page- WebMart</title>
+    <!-- Use of External CSS-->
+    <link rel="stylesheet" href="../css/Navigation.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="stylesheet" href="../css/Blog.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Use of Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Use of Font Awesome Link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Use of Internal CSS -->
+    <style>
+        .highlighted-texts {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 5px;
+        }
+
+        .highlighted-texts strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .quote {
+            background: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+            padding: 24px;
+            margin: 32px 0;
+            font-size: 19px;
+            color: #2e7d32;
+            border-radius: 5px;
+        }
+
+        .topic {
+            margin-bottom: 40px;
+        }
+
+        .topic .more {
+            display: none;
+        }
+
+        .topic.expanded .more {
+            display: block;
+        }
+
+        .read-toggle {
+            margin-top: 14px;
+            padding: 10px 16px;
+            background: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+            transition: background 0.2s ease, transform 0.05s ease, box-shadow 0.2s ease;
+        }
+
+        .read-toggle:hover {
+            background: #1f2a36;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        }
+
+        .read-toggle:active {
+            transform: translateY(1px);
+        }
+
+        .topic.expanded .read-toggle {
+            background: #4CAF50;
+        }
+
+        .read-toggle:focus {
+            outline: 2px solid #4CAF50;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/images/download.png" alt="">
+        </div>
+        <!-- Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="Contact_Us.html">CONTACT US</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Input search box -->
+            <input type="text" placeholder="Search products..." class="search-box">
+            <!-- Cart Button Icon-->
+            <a href="#" class="cart-btn" id="cart-btn">
+                <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.6-1.4 2.5c-.2.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2l.9-1.6h7.5c.7 0 1.4-.4 1.7-1l3.6-6.5c.1-.1.1-.3.1-.5 0-.5-.4-1-1-1H5.2L4.3 2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+            <!-- Login Button-->
+            <a href="Login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Main content of the webpage-->
+        <div class="container">
+            <!-- Inline CSS-->
+            <h1 class="blog-header"
+                style="  text-align: center; margin-top: 40px; text-decoration: underline; color: #2c3e50;">The Digital
+                Revolution</h1>
+            <!-- About the impact of technology on personal lives and bussinesses-->
+            <article>
+
+                <div class="topic">
+                    <h2>How Technology Changed Our Personal Lives</h2>
+                    <div class="summary">
+                        <p>The way we talk to each other has completely changed. Remember when long-distance phone calls
+                            were
+                            expensive? Now we can video chat with family across the world for free. We share photos
+                            instantly,
+                            keep up with friends lives on social media, and text instead of calling. It has made staying
+                            connected so much easier.</p>
+                        <p>Our homes are getting smarter too. We can ask Alexa to play music, tell our phones to set
+                            reminders,
+                            and even control our lights without getting off the couch. Fitness trackers count our steps
+                            and
+                            remind us to move. Sure, our parents and grandparents survived without all this, but now
+                            we've
+                            gotten so used to it that it feels weird when we don't have it.</p>
+                    </div>
+                    <div class="more">
+                        <div class="highlighted-texts">
+                            <strong>Here's something crazy:</strong> Most people check their phones over 2,600 times a
+                            day and
+                            spend more than three hours looking at screens. We're basically glued to our devices, and
+                            it's
+                            changed how our brains work and how we interact with everything around us.
+                        </div>
+                        <p>Learning has changed big time too. You don't need to go to an expensive college to learn new
+                            skills
+                            anymore. Want to learn coding? There's a YouTube tutorial. Need to speak Spanish? There's an
+                            app for
+                            that. The internet has made it possible for anyone to learn almost anything, and that's
+                            pretty
+                            amazing.</p>
+                        <p>Digital tools have woven themselves into daily routines in subtle yet powerful ways.
+                            Calendars
+                            sync across devices so family plans stay aligned. Photo libraries automatically organize
+                            memories,
+                            and cloud backups quietly protect our files without us thinking about it. Health apps nudge
+                            us to
+                            drink water, sleep better, and move more, turning phones into soft coaches that remind us to
+                            take
+                            care of ourselves. Even simple chores, like grocery shopping, have shifted to scheduled
+                            deliveries
+                            and smart lists that learn what we buy most often.</p>
+                        <p>Connection has deepened and complicated at the same time. Group chats stitch together friends
+                            scattered across cities, while online communities give people with niche interests a place
+                            to
+                            belong. At the same time, the constant stream of updates can feel overwhelming, and many of
+                            us
+                            practice small rituals like turning off notifications or setting time limits to keep a
+                            healthy
+                            balance. It’s not about rejecting technology, but about shaping it to serve our values—using
+                            video
+                            calls to see a loved one’s face, setting up shared albums for family events, and carving out
+                            device-free hours to be fully present.</p>
+                        <p>Entertainment has transformed into personalized experiences. Streaming platforms recommend
+                            shows and music based on mood, ambient sounds help us focus, and casual games offer short
+                            breaks
+                            during busy days. Reading has moved to phones and tablets, with adjustable fonts, dark
+                            modes, and
+                            bookmarks that sync across devices. Even creative hobbies—photography, drawing, writing—now
+                            have
+                            accessible tools that let beginners produce impressive results and share them instantly.</p>
+                        <p>All of this adds up to a new rhythm of life. Technology removes friction and opens doors, but
+                            it
+                            also asks us to be intentional. We choose what to keep close and what to mute. We keep
+                            private
+                            spaces off social media and cherish conversations that don’t leave a digital trace. With a
+                            few small
+                            habits—like charging phones outside the bedroom, or setting “quiet hours” for family
+                            dinners—we find
+                            a humane balance that lets the best of technology uplift our days without letting it run
+                            them.</p>
+                    </div>
+                    <button class="read-toggle">Read more</button>
+                </div>
+
+                <div class="topic">
+                    <h2>What's Happening in Business</h2>
+                    <div class="summary">
+                        <p>Technology has turned the business world upside down. Small shops can now sell products
+                            worldwide
+                            through websites. Someone working from their garage can compete with huge companies because
+                            they
+                            don't need fancy offices or expensive equipment-just a laptop and good ideas.</p>
+                    </div>
+                    <div class="more">
+                        <p>Companies don't need to buy and maintain expensive computer systems anymore. Everything's in
+                            the
+                            cloud now, which means businesses can start small and grow fast. They can also understand
+                            their
+                            customers better than ever before by looking at data and using AI to spot patterns that
+                            humans might
+                            miss.</p>
+                        <div class="quote">
+                            <i>"Technology isn't just a tool anymore-it's how business works now. If companies don't
+                                keep up,
+                                they'll get left behind."</i>
+                        </div>
+                        <p>Working from home became normal pretty quickly. Companies realized people could be just as
+                            productive
+                            in their pajamas as they were in the office. Now businesses can hire talented people from
+                            anywhere
+                            in the world, save money on office space, and employees get more time with their families
+                            instead of
+                            sitting in traffic.</p>
+                        <p>Robots and automation are doing a lot of the boring, repetitive work now. Yes, some jobs are
+                            disappearing, but new ones are popping up too. The trick is being willing to learn new
+                            things and
+                            adapt. The world of work is changing fast, and we all need to keep learning to keep up.</p>
+                        <p>Digital commerce has leveled the playing field. A single product page can reach thousands of
+                            customers in an afternoon, and analytics reveal what people love, what they scroll past, and
+                            where
+                            they hesitate. Small teams use pay-as-you-go tools for payments, inventory, marketing, and
+                            support,
+                            combining them into streamlined workflows that used to require entire departments. The
+                            result is a
+                            more agile way to build and improve offerings—release, measure, learn, and repeat quickly.
+                        </p>
+                        <p>Customer experience has become the central battleground. People expect fast delivery,
+                            transparent
+                            policies, and helpful communication. Chat, email, and social support blend together so that
+                            conversations continue smoothly across channels. Automation handles routine requests, while
+                            human agents focus on empathy and complex cases. Loyal customers emerge when brands solve
+                            problems
+                            gracefully, admit mistakes, and respond with genuine care.</p>
+                        <p>Data informs strategy, but trust earns growth. Businesses collect only what they need,
+                            explain why,
+                            and give customers control over preferences. Clear privacy practices build confidence and
+                            reduce
+                            friction. Teams use dashboards to spot trends and experiments to test hypotheses, but they
+                            remember
+                            that numbers tell only part of the story—listening to real voices rounds out the picture.
+                        </p>
+                        <p>The next wave combines software with sustainability and purpose. People choose brands that
+                            reflect
+                            their values, whether that’s eco-friendly packaging, ethical sourcing, or fair wages.
+                            Companies
+                            publish goals, share progress, and invite their communities to hold them accountable.
+                            Technology
+                            makes these commitments measurable; leadership makes them meaningful.</p>
+                    </div>
+                    <button class="read-toggle">Read more</button>
+                </div>
+
+                <div class="topic">
+                    <h2>The Not-So-Good Parts</h2>
+                    <div class="summary">
+                        <p>But let's be real, there are also the drawbacks. A lot of us are addicted to our phones. We
+                            can't help but check notifications every few minutes. We worry about our privacy because
+                            companies
+                            know way too much about us. And hackers are always trying to steal our information.</p>
+                    </div>
+                    <div class="more">
+                        <p>Privacy and safety deserve constant attention. Many apps request more data than necessary,
+                            and it’s
+                            easy to click through permissions without thinking. Simple habits help: review settings, use
+                            unique
+                            passwords, enable two-factor authentication, and keep software updated. Families can set
+                            shared
+                            ground rules, like no location sharing with unknown apps or regular check-ins on device
+                            security.
+                            Schools and workplaces can teach practical digital literacy—not just how to use tools, but
+                            how to
+                            use them safely.</p>
+                        <p>Mental health also matters. Infinite feeds and constant comparisons can chip away at
+                            confidence and
+                            focus. People build safeguards like turning off autoplay, unfollowing accounts that add
+                            stress, and
+                            setting mindful limits around screen time. Some swap doomscrolling for healthier
+                            habits—reading,
+                            walking, journaling, conversations, or creative projects. Community support plays a role
+                            too:
+                            friends remind each other to take breaks, and families encourage shared activities that
+                            don’t
+                            require screens.</p>
+                        <p>Work-life boundaries have blurred. Messages arrive at odd hours; meetings spread across time
+                            zones. Teams thrive when they set clear norms for response times, quiet hours, and flexible
+                            schedules. Leaders model balance by taking time off, respecting evenings and weekends, and
+                            praising
+                            outcomes rather than constant availability. Healthy cultures use technology to empower—not
+                            to
+                            exhaust.</p>
+                        <p>None of these challenges mean we should step back from technology. They invite us to step
+                            forward
+                            with intention. With small, consistent practices, we protect our privacy, preserve our
+                            attention,
+                            and keep our relationships strong. That way, we get the benefits without losing the things
+                            that make
+                            life rich: focus, presence, and connection.</p>
+                    </div>
+                    <button class="read-toggle">Read more</button>
+                </div>
+
+                <div class="topic">
+                    <h2>What's Next?</h2>
+                    <div class="summary">
+                        <p>Technology keeps getting faster and crazier. AI is getting smarter, and new inventions are
+                            coming
+                            that we can't even imagine yet. The important thing is finding balance. We need to enjoy the
+                            good
+                            stuff technology brings without letting it take over our lives.</p>
+                    </div>
+                    <div class="more">
+                        <p>We should use technology to make our lives better, not let it control us. We need to stay
+                            human-talk
+                            to people face-to-face sometimes, put the phone down during dinner, and remember that real
+                            connections matter more than likes and followers.</p>
+                        <div class="highlighted-texts">
+                            <strong>The Bottom Line:</strong> Technology isn't good or bad by itself-it's what we do
+                            with it
+                            that matters. We have the opportunity to create a better world with technology, or let it
+                            isolate and distract us. The choice is ours.
+                        </div>
+                        <p>Artificial intelligence will continue improving everyday experiences—recommendations will
+                            feel more
+                            helpful, assistants will understand context better, and accessibility tools will open new
+                            doors for
+                            people with disabilities. Automation will take on more routine tasks, freeing time for
+                            creative and
+                            human-centered work. Education will become more adaptive, meeting learners where they are
+                            and
+                            supporting diverse paths toward mastery.</p>
+                        <p>Hardware will shrink and blend into surroundings. Wearables will track health with greater
+                            accuracy,
+                            surfaces will become interactive, and home devices will cooperate instead of acting like
+                            separate
+                            islands. Cities will use sensors to optimize traffic and energy use, and communities will
+                            explore
+                            ways to harness technology for common good—sharing resources, reducing waste, and improving
+                            public
+                            services. As these changes unfold, conversations about ethics, inclusion, and accountability
+                            will be
+                            essential.</p>
+                        <p>Above all, the future invites participation. We don’t have to be passive consumers; we can
+                            shape
+                            technology by choosing tools that align with our values, supporting businesses that act
+                            responsibly,
+                            and advocating for policies that protect people. We can build local networks, contribute to
+                            open
+                            source, mentor newcomers, and use our voices to push systems toward fairness. When we engage
+                            with
+                            purpose, technology becomes a force multiplier for community, creativity, and care.</p>
+                        <p>The path forward is practical and hopeful. Start small, iterate, and keep learning. Celebrate
+                            progress, share knowledge, and remember that curiosity is a powerful engine. With clear
+                            intentions,
+                            we can welcome innovation without letting it overwhelm us, creating a digital world that is
+                            not only
+                            efficient, but also humane.</p>
+                    </div>
+                    <button class="read-toggle">Read more</button>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- About us column -->
+            <div class="footer-section">
+                <h3 id="footer-about">About WebMart</h3>
+                <p>We are dedicated to providing sustainable and eco-friendly products to help you live a greener life.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick navigation links -->
+            <div class="footer-section">
+                <h3 id="footer-links">Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact information section -->
+            <div class="footer-section">
+                <h3 id="footer-contact">Contact Info</h3>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fa-solid fa-location-dot"></i><a>Itahari, Sundar
+                            Dulari</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a>support@webmart.com</a></div>
+                    <div class="contact-item"><i class="fa-solid fa-phone"></i><a>+9779806095144</a></div>
+                </div>
+            </div>
+
+            <!-- Newsletter signup form -->
+            <div class="footer-section">
+                <h3 id="footer-newsletter">Newsletter</h3>
+                <p>Subscribe for updates and eco-tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 WebMart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: Rs. <span id="cart-total">0</span></div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" class="login-form">
+                <h2>LOGIN</h2>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <button class="submitbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.read-toggle').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var topic = btn.closest('.topic');
+                    var expanded = topic.classList.toggle('expanded');
+                    btn.textContent = expanded ? 'Read less' : 'Read more';
+                });
+            });
+        });
+    </script>
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>
